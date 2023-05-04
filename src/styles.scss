@@ -1,9 +1,15 @@
+
+$primary : #e55039;
+$secondary : #1f2947;
+$tertiary : #4a69bd;
+
+
 // Import the light theme
 @import 'light.scss';
 
 // Define the styles for the light theme
 .light {
-  background-color: $background-color;
+  background-color: $tertiary;
 }
 
 // Import the dark theme
@@ -11,6 +17,7 @@
 
 // Define the styles for the dark theme
 .dark {
-  background-color: $background-color;
+  background-color: $secondary;
   color: $font-color;
 }
+
