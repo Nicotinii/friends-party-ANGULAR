@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+// Import the light theme
+@import 'light.scss';
+
+// Define the styles for the light theme
+.light {
+  background-color: $background-color;
+}
+
+// Import the dark theme
+@import 'dark.scss';
+
+// Define the styles for the dark theme
+.dark {
+  background-color: $background-color;
+  color: $font-color;
+}

@@ -5,12 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 
-import { HomeComponent } from './components/home/home.component';
+import { ThemeService } from './theme.service';
 
+import { HomeComponent } from './components/home/home.component';
+import { ThemeSwitcherComponent } from './components/theme-switcher/theme-switcher.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ThemeSwitcherComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
