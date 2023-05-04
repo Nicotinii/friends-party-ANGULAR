@@ -6,9 +6,24 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## I use firebase 7.5.0 for the backend
+npm i -g firebase-tools
+firebase login
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+in vscode
+
+create folder environments in src
+create file environment.ts witth the following content
+export const environment = {
+    production: false
+}
+create file environment.prod.ts
+ng add @angular/fire
+setup only Firestore feature
+choose account
+choose project
+create a new app
+
 
 ## Build
 
