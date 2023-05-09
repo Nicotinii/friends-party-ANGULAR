@@ -8,19 +8,24 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { FormsModule } from '@angular/forms';
 
 
 import { HomeComponent } from './components/home/home.component';
 import { ThemeSwitcherComponent } from './components/theme-switcher/theme-switcher.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { FormsModule } from '@angular/forms';
-
+import { AdminComponent } from './components/admin/admin.component';
+import { GamesComponent } from './components/games/games.component';
+import { GamesDetailComponent } from './components/games-detail/games-detail.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ThemeSwitcherComponent,
-    NavbarComponent
+    NavbarComponent,
+    AdminComponent,
+    GamesComponent,
+    GamesDetailComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

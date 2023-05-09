@@ -1,8 +1,9 @@
+<router-outlet></router-outlet>
 <body [class.dark-theme]="themeService.getTheme() === 'dark'" [class.light-theme]="themeService.getTheme() === 'light'">
 
     <app-navbar></app-navbar>
     <app-home></app-home>
-
+ 
     <!-- Utilisation d'un bouton pour permettre à l'utilisateur de basculer entre les thèmes -->
     <button (click)="toggleTheme()">Basculer le thème</button>
 </body>

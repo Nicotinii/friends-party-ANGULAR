@@ -1,0 +1,9 @@
+<ul>
+    <li *ngFor="let data of userData |async">
+        <a routerLink="/detail/{{data.id}}">
+            <h1>{{data.title}}</h1>
+            <br>
+            <img src="{{data.image}}" alt="{{data.image}}">
+        </a>
+    </li>
+</ul>
